@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{--bg:#ffffff;--fg:#0f172a;}
+html,body{background:var(--bg);color:var(--fg);}
+.container{ @apply max-w-6xl mx-auto px-4; }
+.badge{ @apply text-xs px-2 py-1 rounded-full border; }
+.card{ @apply rounded-2xl p-4 shadow-soft border hover:shadow-lg transition; }

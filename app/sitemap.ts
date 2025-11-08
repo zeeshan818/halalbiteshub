@@ -1,4 +1,4 @@
-import data from "../public/data/restaurants.json";
+import data from "./data/restaurants.json";
 export default async function sitemap() {
   const base = "https://www.halalbiteshub.com";
   const routes = ["", "/contact", "/submit"].map((p) => ({ url: base + p, changeFrequency: "weekly", priority: 0.8 }));

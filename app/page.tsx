@@ -1,7 +1,7 @@
 "use client";
 
 import RestaurantCard from "./(site)/components/RestaurantCard";
-import data from "../public/data/restaurants.json";
+import data from "./data/restaurants.json";
 import { useMemo, useState } from "react";
 
 type R = typeof data extends Array<infer T> ? T : never;

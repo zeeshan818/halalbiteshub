@@ -1,4 +1,4 @@
-import data from "../../public/data/restaurants.json";
+import data from "../../data/restaurants.json";
 type R = typeof data extends Array<infer T> ? T : never;
 export async function generateStaticParams(){
   const all: any[] = (data as any);

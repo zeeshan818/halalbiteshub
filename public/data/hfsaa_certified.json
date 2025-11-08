@@ -1,18 +1,226 @@
 [
   {
-    "id": "lmb-60148-mrbroast",
-    "name": "Mr. Broast (Lombard)",
+    "id": "pz-60189-pitazone",
+    "name": "Pita Zone Mediterranean Grill",
     "category": "Restaurant",
-    "cuisine": "Pakistani/American",
-    "address": "820 E Roosevelt Rd",
+    "cuisine": "Mediterranean",
+    "address": "2042 S Naperville Rd",
+    "city": "Wheaton",
+    "state": "IL",
+    "zip": "60189",
+    "phone": "",
+    "website": "",
+    "certification": "HFSAA-certified",
+    "sources": [
+      "https://www.hfsaa.org/chicago"
+    ]
+  },
+  {
+    "id": "sz-60077-sizzle",
+    "name": "Sizzle",
+    "category": "Restaurant",
+    "cuisine": "Pakistani/Grill",
+    "address": "4853 Oakton St",
+    "city": "Skokie",
+    "state": "IL",
+    "zip": "60077",
+    "phone": "",
+    "website": "",
+    "certification": "HFSAA-certified",
+    "sources": [
+      "https://www.hfsaa.org/chicago"
+    ]
+  },
+  {
+    "id": "zak-60148-zaks",
+    "name": "Zak's Pizza Pasta & Wings",
+    "category": "Restaurant",
+    "cuisine": "Pizza/Italian/American",
+    "address": "931 S Main St",
     "city": "Lombard",
     "state": "IL",
     "zip": "60148",
-    "phone": "(630) 889-1188",
-    "website": "https://mrbroast.com",
+    "phone": "(630) 629-8700",
+    "website": "",
     "certification": "HFSAA-certified",
     "sources": [
-      "https://www.hfsaa.org/chicago/"
+      "https://www.instagram.com/p/DG1eyDwuZ6K/"
+    ]
+  },
+  {
+    "id": "fil-60181-fillicafe",
+    "name": "Filli Cafe",
+    "category": "Cafe/Tea",
+    "cuisine": "Cafe/Tea",
+    "address": "100 E Roosevelt Rd",
+    "city": "Villa Park",
+    "state": "IL",
+    "zip": "60181",
+    "phone": "",
+    "website": "",
+    "certification": "HFSAA-certified",
+    "sources": [
+      "https://www.instagram.com/p/CgFrVhKodSV/"
+    ]
+  },
+  {
+    "id": "ggb-60714-goodguys",
+    "name": "Good Guys Burger Company",
+    "category": "Restaurant",
+    "cuisine": "Burgers/American",
+    "address": "8401 N Milwaukee Ave",
+    "city": "Niles",
+    "state": "IL",
+    "zip": "60714",
+    "phone": "",
+    "website": "",
+    "certification": "HFSAA-certified",
+    "sources": [
+      "https://www.instagram.com/reel/DOgbWl_jsfM/"
+    ]
+  },
+  {
+    "id": "hsw-60148-helloshawarma",
+    "name": "Hello Shawarma (Lombard)",
+    "category": "Restaurant",
+    "cuisine": "Middle Eastern",
+    "address": "521 E Roosevelt Rd",
+    "city": "Lombard",
+    "state": "IL",
+    "zip": "60148",
+    "phone": "(630) 330-4444",
+    "website": "",
+    "certification": "HFSAA-certified",
+    "sources": [
+      "https://www.hmsusa.org/"
+    ]
+  },
+  {
+    "id": "pp-60008-pitapita",
+    "name": "Pita Pita (Rolling Meadows)",
+    "category": "Restaurant",
+    "cuisine": "Mediterranean",
+    "address": "3210 Kirchoff Rd",
+    "city": "Rolling Meadows",
+    "state": "IL",
+    "zip": "60008",
+    "phone": "",
+    "website": "https://pitapita.com/",
+    "certification": "HFSAA-certified",
+    "sources": [
+      "https://pitapita.com/"
+    ]
+  },
+  {
+    "id": "pp-60108-pitapita",
+    "name": "Pita Pita (Bloomingdale)",
+    "category": "Restaurant",
+    "cuisine": "Mediterranean",
+    "address": "148 S Bloomingdale Rd",
+    "city": "Bloomingdale",
+    "state": "IL",
+    "zip": "60108",
+    "phone": "",
+    "website": "https://pitapita.com/",
+    "certification": "HFSAA-certified",
+    "sources": [
+      "https://pitapita.com/"
+    ]
+  },
+  {
+    "id": "pp-60462-pitapita",
+    "name": "Pita Pita (Orland Park)",
+    "category": "Restaurant",
+    "cuisine": "Mediterranean",
+    "address": "14650 S La Grange Rd",
+    "city": "Orland Park",
+    "state": "IL",
+    "zip": "60462",
+    "phone": "",
+    "website": "https://pitapita.com/",
+    "certification": "HFSAA-certified",
+    "sources": [
+      "https://pitapita.com/"
+    ]
+  },
+  {
+    "id": "pp-60659-pitapita",
+    "name": "Pita Pita (Chicago - Devon)",
+    "category": "Restaurant",
+    "cuisine": "Mediterranean",
+    "address": "3106 W Devon Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "60659",
+    "phone": "",
+    "website": "https://pitapita.com/",
+    "certification": "HFSAA-certified",
+    "sources": [
+      "https://pitapita.com/"
+    ]
+  },
+  {
+    "id": "bp-60148-biryanipointe",
+    "name": "Biryani Pointe",
+    "category": "Restaurant",
+    "cuisine": "Indian",
+    "address": "410 E Roosevelt Rd",
+    "city": "Lombard",
+    "state": "IL",
+    "zip": "60148",
+    "phone": "",
+    "website": "https://www.biryanipointelombard.com/",
+    "certification": "HFSAA-certified",
+    "sources": [
+      "https://www.biryanipointelombard.com/"
+    ]
+  },
+  {
+    "id": "car-60440-caravan",
+    "name": "Caravan Restaurant",
+    "category": "Restaurant",
+    "cuisine": "Pakistani/Indian",
+    "address": "317 N Schmidt Rd",
+    "city": "Bolingbrook",
+    "state": "IL",
+    "zip": "60440",
+    "phone": "(708) 606-9342",
+    "website": "",
+    "certification": "HFSAA-certified",
+    "sources": [
+      "https://www.facebook.com/groups/1071543793762395/posts/1881468616103238/"
+    ]
+  },
+  {
+    "id": "gn-60614-ghareebnawaz",
+    "name": "Ghareeb Nawaz (Lincoln Park)",
+    "category": "Restaurant",
+    "cuisine": "Pakistani/Indian",
+    "address": "2364 N Lincoln Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "60614",
+    "phone": "(773) 360-8496",
+    "website": "",
+    "certification": "HFSAA-certified",
+    "sources": [
+      "https://muslimbuilt.com/restaurants"
+    ]
+  },
+  {
+    "id": "hal-60605-halaleez",
+    "name": "Halaleez",
+    "category": "Restaurant",
+    "cuisine": "Mediterranean",
+    "address": "400 S Financial Pl",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "60605",
+    "phone": "",
+    "website": "",
+    "certification": "HFSAA-certified",
+    "sources": [
+      "https://muslimbuilt.com/restaurants"
     ]
   }
 ]

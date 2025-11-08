@@ -222,5 +222,37 @@
     "sources": [
       "https://www.instagram.com/p/DHb4WtaulRK/"
     ]
+  },
+  {
+    "id": "nay-60139-nay",
+    "name": "Nay Restaurant",
+    "category": "Restaurant",
+    "cuisine": "Mediterranean",
+    "address": "365 E North Ave",
+    "city": "Glendale Heights",
+    "state": "IL",
+    "zip": "60139",
+    "phone": "(630) 868-3744",
+    "website": "",
+    "certification": "self-declared",
+    "sources": [
+      "https://m.yelp.com/search?find_desc=Restaurants+Halal&find_loc=Glendale+Heights%2C+IL"
+    ]
+  },
+  {
+    "id": "jbz-60188-jbeez",
+    "name": "JBEEZ",
+    "category": "Restaurant",
+    "cuisine": "Burgers/American",
+    "address": "976 Army Trail Rd",
+    "city": "Carol Stream",
+    "state": "IL",
+    "zip": "60188",
+    "phone": "(630) 855-5054",
+    "website": "",
+    "certification": "self-declared",
+    "sources": [
+      "https://www.hmsusa.org/"
+    ]
   }
 ]

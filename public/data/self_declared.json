@@ -1,18 +1,1 @@
-[
-  {
-    "id": "schaum-60173-kabobish",
-    "name": "Kabobish",
-    "category": "Restaurant",
-    "cuisine": "Pakistani/Indian",
-    "address": "1234 Sample Rd",
-    "city": "Schaumburg",
-    "state": "IL",
-    "zip": "60173",
-    "phone": "",
-    "website": "",
-    "certification": "self-declared",
-    "sources": [
-      "https://example.com/menu"
-    ]
-  }
-]
+[]

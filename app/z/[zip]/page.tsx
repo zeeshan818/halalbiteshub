@@ -1,29 +1,32 @@
-import data from "../../data/restaurants.json";
-type R = typeof data extends Array<infer T> ? T : never;
+import all from "../../data/restaurants.json";
+
 export async function generateStaticParams(){
-  const all: any[] = (data as any);
-  const zips = Array.from(new Set(all.map(r => r.zip)));
+  const zips = Array.from(new Set((all as any[]).map(r => (r.zip||"").trim()).filter(Boolean)));
   return zips.map(z => ({ zip: z }));
 }
-export async function generateMetadata({ params }: { params: { zip: string } }){
+
+export function generateMetadata({ params }:{ params:{ zip:string }}){
   const zip = params.zip;
-  return { title: `Halal restaurants in ${zip} — HalalBitesHub`, description: `Browse halal restaurants in ZIP ${zip}.` };
+  return {
+    title: `Halal Restaurants in ${zip} • HalalBitesHub`,
+    description: `Find halal-friendly restaurants near ${zip}. HFSAA-certified first, plus clearly labeled self-declared.`,
+  };
 }
-export default function ZipPage({ params }: { params: { zip: string } }){
-  const all: any[] = (data as any);
-  const rows = all.filter(r => r.zip === params.zip);
-  return (<main className="container py-8">
-    <h1 className="text-2xl md:text-3xl font-bold mb-4">Halal Restaurants in {params.zip}</h1>
-    {rows.length === 0 && <p className="text-gray-500">No listings yet for this ZIP.</p>}
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {rows.map((r: any) => (<a key={r.id} href="/" className="card">
-        <div className="flex items-center justify-between">
-          <h3 className="text-lg font-semibold">{r.name}</h3>
-          <span className={"badge " + ((r.certification||'').toLowerCase().includes('hfsaa') ? "bg-green-50 border-green-300 text-green-700" : "bg-yellow-50 border-yellow-300 text-yellow-700")}>{r.certification}</span>
-        </div>
-        <p className="text-sm">{r.cuisine || r.category}</p>
-        <p className="text-sm text-gray-600">{r.address}, {r.city}, {r.state} {r.zip}</p>
-      </a>))}
-    </div>
-  </main>);
+
+export default function Page({ params }:{ params:{ zip: string }}){
+  const zip = params.zip;
+  const list = (all as any[]).filter(r => (r.zip||"") === zip);
+  return (
+    <main className="container py-8">
+      <h1 className="text-2xl md:text-3xl font-bold mb-4">Halal Restaurants in {zip}</h1>
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {list.map((r:any)=>(
+          <div key={r.id} className="rounded-xl border p-4">
+            <div className="font-semibold">{r.name}</div>
+            <div className="text-sm text-gray-600">{[r.address, r.city, r.state, r.zip].filter(Boolean).join(", ")}</div>
+          </div>
+        ))}
+      </div>
+    </main>
+  );
 }

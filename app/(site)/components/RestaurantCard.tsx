@@ -16,26 +16,28 @@ function InitialBadge({ name }: { name: string }) {
   );
 }
 
-function CardImage({ r }:{ r:any }){
-  const [src, setSrc] = React.useState<string|undefined>(r.image);
-  React.useEffect(()=>{
-    let cancelled=false;
-    async function loadOG(){
+function CardImage({ r }: { r: any }) {
+  const [src, setSrc] = React.useState<string | undefined>(r.image);
+  React.useEffect(() => {
+    let cancelled = false;
+    async function loadOG() {
       if (src || !r.website) return;
-      try{
+      try {
         const url = `/.netlify/functions/ogimage?url=${encodeURIComponent(r.website)}`;
         const res = await fetch(url);
         if (!res.ok) return;
         const blob = await res.blob();
         if (cancelled) return;
         setSrc(URL.createObjectURL(blob));
-      }catch{}
+      } catch {}
     }
     loadOG();
-    return ()=>{ cancelled=true; };
+    return () => {
+      cancelled = true;
+    };
   }, [r.website, src]);
-  if (src){
-    return <img src={src} alt={r.name} className="w-full h-40 object-cover" loading="lazy"/>;
+  if (src) {
+    return <img src={src} alt={r.name} className="w-full h-40 object-cover" loading="lazy" />;
   }
   return <InitialBadge name={r.name || "HalalBitesHub"} />;
 }
@@ -44,19 +46,40 @@ export default function RestaurantCard({ r }: { r: any }) {
   const q = [r.name, r.address, r.city, r.state, r.zip].filter(Boolean).join(" ");
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
   const claimSubject = encodeURIComponent(`Claim/Update Listing: ${r.name}`);
-  const claimBody = encodeURIComponent(`Business name: ${r.name}\nYour role: Owner/Manager/Staff\nPhone: ${r.phone||""}\nWebsite: ${r.website||""}\nChanges requested:\n- `);
+  const claimBody = encodeURIComponent(
+    `Business name: ${r.name}\nYour role: Owner/Manager/Staff\nPhone: ${r.phone || ""}\nWebsite: ${r.website || ""}\nChanges requested:\n- `
+  );
   const claimUrl = `mailto:contact@halalbiteshub.com?subject=${claimSubject}&body=${claimBody}`;
 
   return (
-    <div className="rounded-2xl overflow-hidden shadow-sm border hover:shadow-md transition bg-white">
+    <div
+      className="rounded-2xl overflow-hidden shadow-sm border hover:shadow-md transition bg-white"
+      itemScope
+      itemType="https://schema.org/Restaurant"
+    >
+      <meta itemProp="name" content={r.name} />
+      {r.phone && <meta itemProp="telephone" content={r.phone} />}
+      {r.website && <link itemProp="url" href={r.website} />}
+      <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress" className="hidden">
+        <meta itemProp="streetAddress" content={r.address || ""} />
+        <meta itemProp="addressLocality" content={r.city || ""} />
+        <meta itemProp="addressRegion" content={r.state || "IL"} />
+        <meta itemProp="postalCode" content={r.zip || ""} />
+      </div>
+
       <a href={mapsUrl} target="_blank" rel="noopener noreferrer" aria-label={`Open ${r.name} on Google Maps`}>
         <CardImage r={r} />
       </a>
 
       <div className="p-4 space-y-2">
         <div className="flex items-start justify-between gap-3">
-          <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-lg hover:underline">
-            {r.name}
+          <a
+            href={mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-lg hover:underline"
+          >
+            <span itemProp="name">{r.name}</span>
           </a>
           <span
             className={
@@ -70,8 +93,10 @@ export default function RestaurantCard({ r }: { r: any }) {
           </span>
         </div>
 
-        <div className="text-sm text-gray-600">{r.cuisine || r.category}</div>
-        <div className="text-sm text-gray-600">
+        <div className="text-sm text-gray-600" itemProp="servesCuisine">
+          {r.cuisine || r.category}
+        </div>
+        <div className="text-sm text-gray-600" itemProp="address">
           {[r.address, r.city, r.state, r.zip].filter(Boolean).join(", ")}
         </div>
 
@@ -107,10 +132,7 @@ export default function RestaurantCard({ r }: { r: any }) {
           >
             View reviews
           </a>
-          <a
-            className="ml-auto px-3 py-1 rounded-full border text-sm hover:bg-gray-50"
-            href={claimUrl}
-          >
+          <a className="ml-auto px-3 py-1 rounded-full border text-sm hover:bg-gray-50" href={claimUrl}>
             Claim / update
           </a>
         </div>

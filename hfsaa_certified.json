@@ -8,7 +8,7 @@
     "city": "Wheaton",
     "state": "IL",
     "zip": "60189",
-    "phone": "+1 630-949-2121",
+    "phone": "",
     "website": "",
     "certification": "HFSAA-certified",
     "sources": [
@@ -41,10 +41,10 @@
     "state": "IL",
     "zip": "60148",
     "phone": "(630) 629-8700",
-    "website": "https://www.zakszabiha.com/",
+    "website": "",
     "certification": "HFSAA-certified",
     "sources": [
-      "https://www.facebook.com/HFSAA.Midwest/photos/794173316527532/"
+      "https://www.instagram.com/p/DG1eyDwuZ6K/"
     ]
   },
   {
@@ -72,11 +72,11 @@
     "city": "Niles",
     "state": "IL",
     "zip": "60714",
-    "phone": "(224) 278-9776",
+    "phone": "",
     "website": "",
     "certification": "HFSAA-certified",
     "sources": [
-      "https://www.instagram.com/p/DN1VtzG3MY0/"
+      "https://www.instagram.com/reel/DOgbWl_jsfM/"
     ]
   },
   {
@@ -92,7 +92,7 @@
     "website": "",
     "certification": "HFSAA-certified",
     "sources": [
-      "https://www.hmsusa.org/certified-detail/hello-shawarma-lombard"
+      "https://www.hmsusa.org/"
     ]
   },
   {
@@ -161,18 +161,18 @@
   },
   {
     "id": "bp-60148-biryanipointe",
-    "name": "Biryani Pointe (Lombard)",
+    "name": "Biryani Pointe",
     "category": "Restaurant",
     "cuisine": "Indian",
-    "address": "40 W Roosevelt Rd",
+    "address": "410 E Roosevelt Rd",
     "city": "Lombard",
     "state": "IL",
     "zip": "60148",
-    "phone": "(630) 519-3815",
+    "phone": "",
     "website": "https://www.biryanipointelombard.com/",
     "certification": "HFSAA-certified",
     "sources": [
-      "https://www.instagram.com/p/B9FmApoAZHn/"
+      "https://www.biryanipointelombard.com/"
     ]
   },
   {
@@ -204,55 +204,23 @@
     "website": "",
     "certification": "HFSAA-certified",
     "sources": [
-      "https://www.instagram.com/p/CnFo8w-L5IT/"
+      "https://muslimbuilt.com/restaurants"
     ]
   },
   {
-    "id": "hal-60148-halaleez",
-    "name": "Halaleez (Lombard)",
+    "id": "hal-60605-halaleez",
+    "name": "Halaleez",
     "category": "Restaurant",
     "cuisine": "Mediterranean",
-    "address": "2770 S Highland Ave Suite 80",
-    "city": "Lombard",
+    "address": "400 S Financial Pl",
+    "city": "Chicago",
     "state": "IL",
-    "zip": "60148",
-    "phone": "(630) 290-5160",
+    "zip": "60605",
+    "phone": "",
     "website": "",
     "certification": "HFSAA-certified",
     "sources": [
-      "https://www.instagram.com/p/DHb4WtaulRK/"
-    ]
-  },
-  {
-    "id": "nay-60139-nay",
-    "name": "Nay Restaurant",
-    "category": "Restaurant",
-    "cuisine": "Mediterranean",
-    "address": "365 E North Ave",
-    "city": "Glendale Heights",
-    "state": "IL",
-    "zip": "60139",
-    "phone": "(630) 868-3744",
-    "website": "",
-    "certification": "self-declared",
-    "sources": [
-      "https://m.yelp.com/search?find_desc=Restaurants+Halal&find_loc=Glendale+Heights%2C+IL"
-    ]
-  },
-  {
-    "id": "jbz-60188-jbeez",
-    "name": "JBEEZ",
-    "category": "Restaurant",
-    "cuisine": "Burgers/American",
-    "address": "976 Army Trail Rd",
-    "city": "Carol Stream",
-    "state": "IL",
-    "zip": "60188",
-    "phone": "(630) 855-5054",
-    "website": "",
-    "certification": "self-declared",
-    "sources": [
-      "https://www.hmsusa.org/"
+      "https://muslimbuilt.com/restaurants"
     ]
   }
 ]

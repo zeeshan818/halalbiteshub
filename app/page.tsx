@@ -2,7 +2,7 @@
 import React, { useMemo, useState } from "react";
 import data from "./data/restaurants.json";
 import RestaurantCard from "./(site)/components/RestaurantCard";
-import AdSlot from "@/components/AdSlot";
+import AdSlot from "../components/AdSlot"; // <-- fixed path (../components)
 
 type Rec = {
   id: string;
@@ -117,7 +117,9 @@ export default function Page() {
       {/* Results */}
       <div className="flex items-center justify-between mb-3">
         <div className="text-sm text-gray-600">{filtered.length} places</div>
-        <a href="/submit" className="text-sm underline">Suggest a restaurant</a>
+        <a href="/submit" className="text-sm underline">
+          Suggest a restaurant
+        </a>
       </div>
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
